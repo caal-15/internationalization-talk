@@ -1,103 +1,80 @@
 class: introOutro
 
 .introOutroText[
-  # This is the title
-  ## This is the Subtitle
+  # Internacionalización
+  ## Usando .green[__i18n__] en .green[__React__]
 ]
 
 ---
 class: blueBg1, middle, center
 
-# Content
+# Contenido
 
 .contentTable[
   |||
   |---|---|
-  |.green[.bold[1. ]]|Blue Slide|
-  |.green[.bold[2. ]]|Green Slide|
-  |.green[.bold[3. ]]|White Slide|
-  |.green[.bold[4. ]]|Blue Centered Slide|
-  |.green[.bold[5. ]]|Small Column Slide|
-  |.green[.bold[6. ]]|Big Column Slide|
-  |.green[.bold[7. ]]|Image Bottom Slide|
+  |.green[__1. __]|Internacionalización y Lenguaje|
+  |.green[__2. __]|I18n - Filosofía|
+  |.green[__3. __]|I18next - Implementación|
 ]
 
----
-class: blueBg1
-
-# Slide 1
-
-This is a blue slide (.bold[slide class:] .green[`blueBg1`]) with .bold[bold text], .italic[italic text], .green[green text], and `code text`, this all can be combined, .italic[e.g.:] .green[.italic[.bold[Green Italic Bold Text!]]] or .green[`green code text!`].
-
----
-class: greenBg1
-
-# Slide 2
-
-This is a green slide (.bold[slide class:] .blue[`greenBg1`]) and a bit of .blue[blue text].
-
----
-class: whiteBg1
-
-# Slide 3
-
-A white background slide (.bold[slide class:] .green[`whiteBg1`]).
-
-```javascript
-const { error } = props
-
-const msg = `An error happended: ${error}`
-```
-
-With some highlighted code!
-
-.footnote[.green[.bold[And a cute footnote]]]
-
----
-class: blueBg1, logoLeft, middle, center
-
-# Slide 4
-
-This is a blue slide with the logo on the .italic[left] (.bold[slide class:] .green[`blueBg1`], .green[`logoLeft`]) with .italic[vertically centered] content (.bold[slide class:] .green[`middle`]) and .italic[horizontally centered] content (.bold[slide class:] .green[`center`]).
-
----
-class: greenBg1, logoLeft
-
-.smallColumnLeft[
-  # Slide 5
-
-  This is a small column to the left, it can contain a small piece of .blue[text] and a big .blue[image] to the right. Content is .italic[vertically] centered :) (.bold[content class:] .blue[`smallColumnLeft`] for the text and .blue[`bigColumnRight`] for the image).
-
-  .footnote[.bold[Slide classes for this slide:] .blue[`greenBg1, logoLeft`]]
-]
-
-.bigColumnRight[![Random Image](img/image.jpg)]
-
----
-class: whiteBg1, logoLeft
-
-.bigColumnLeft[
-  # Slide 6
-
-  This is a big column to the left, it can contain a bigger pieces of .blue[text] and a small .blue[image] to the right. Content is .italic[vertically] centered :) (.bold[content class:] .blue[`bigColumnLeft`] for the text and .blue[`smallColumnRight`] for the image).
-
-  .footnote[.bold[Slide classes for this slide:] .blue[`whiteBg1, logoLeft`]]
-]
-
-.smallColumnRight[![Random Image](img/image.jpg)]
+.footnote[Sigue esta presentación en: [caal-15.github.io/internationalization-talk](https://caal-15.github.io/internationalization-talk/).]
 
 ---
 class: blueBg1, middle, center
 
-# Slide 7
+# Internacionalización
 
-This shows an .green[image] at the bottom, because sometimes you want to do that, and there is no one who can stop you! so go ahead and make the world your own! :) (.bold[content class:] .green[`bottomImage`]).
+Es el _arte_ de adaptar software al .green[__lenguaje__] y .green[__particularidades__] de una región en _específico_.
 
-.bottomImage[![Random Image](img/image.jpg)]
+.footnote[Si quieres estas diapositivas para tu presentación puedes encotnrarlas [aquí](https://github.com/caal-15/team-intl-remark-slideshow).]
+
+---
+class: whiteBg1
+
+# Hablemos del lenguaje
+
+El _lenguaje_ es lo primero que viene a la mente cuando pensamos en __internacionalizar__ una aplicación, y a su vez, la parte más __difícil__, debido a sus .green[__particularidades__]:
+
+* _Géneros:_ puede haber más de 2, pueden cambiar de singular a plural.
+* _Plurales:_ puede haber distintas formas para distintos números de objetos.
+* _Fraseo:_ cómo se debe expresar una idea para que suene adecuada en el contexto puede cambiar dramáticamente.
+* _Excepciones:_ todos los lenguajes contienen excepciones a sus propias reglas que pueden parecer totalmente arbitrarias.
+
+---
+class: whiteBg1
+
+# Software Automatizado
+
+Para traducciones _básicas_, podemos usar __software automatizado__ para ahorrarnos trabajo, sin embargo, tiene .green[__grandes desventajas__] si queremos precisión:
+
+* En el peor caso la traducción puede ser __incorrecta__.
+* En el mejor de los casos la traducción puede sonar __incómoda__.
+* No puede tener en cuenta aspectos como el __fraseo__ y el __tono__ que quiere transmitir la aplicación.
+
+Por estos motivos debemos asegurarnos que al menos las partes _importantes_ de nuestra aplicación estén __bien__ traducidas.
+
+---
+class: blueBg1, middle, center
+
+# I18n
+
+No es más que una serie de .green[__estándares__] que describen el proceso de __internacionalización__, y ha generado a su vez numerosas _librerías_ en diferentes lenguajes para este propósito.
+
+.footnote[__Internacionalización__ se acorta .green[_i18n_] debido a las __18__ letras entre la __i__ y la __n__.]
+
+---
+class: whiteBg1
+
+# Filosofía
+
+.green[__I18n__] pretende precisamente que las traducciones sean lo más __precisas__ posible, teniendo en cuenta __conceptos de la gramática__ como tal (_géneros_, _plurales_, _excepciones_, etc.) y también __conceptos abstractos__ tales como la _intención_, el _tono_, o el _fraseo_.
+
+Debido a ello no es suficiente con traducción __palabra a palabra__, se requiere una traducción .green[__frase a frase__] que garantice que las mismas conserven __todo__ el significado que quieren transmitir.
 
 ---
 class: introOutro
 
 .introOutroText[
-  # Thank you!
+  # Muchas Gracias!
 ]

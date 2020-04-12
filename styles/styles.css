@@ -47,6 +47,10 @@ body {
   font-family: 'Open Sans';
 }
 
+a {
+  color: #62e52c;
+}
+
 .introOutro {
   background-color: #253746;
   color: #fff;
@@ -111,9 +115,13 @@ body {
   margin: 0;
 }
 
+.introOutroText h1 {
+  font-size: 40px;
+}
+
 .introOutroText h2 {
   font-weight: normal;
-  font-size: 35px;
+  font-size: 25px;
 }
 
 .remark-code, .remark-inline-code {
@@ -194,6 +202,7 @@ body {
 .footnote  {
   position: absolute;
   bottom: 2vh;
+  left: 2vw;
   font-size: small;
 }
 
