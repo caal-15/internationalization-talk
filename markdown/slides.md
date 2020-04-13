@@ -15,7 +15,8 @@ class: blueBg1, middle, center
   |---|---|
   |.green[__1. __]|Internacionalización y Lenguaje|
   |.green[__2. __]|I18n - Filosofía|
-  |.green[__3. __]|I18next - Implementación|
+  |.green[__3. __]|I18next - Configuración|
+  |.green[__4. __]|Demo|
 ]
 
 .footnote[Sigue esta presentación en: [caal-15.github.io/internationalization-talk](https://caal-15.github.io/internationalization-talk/).]
@@ -71,6 +72,64 @@ class: whiteBg1
 .green[__I18n__] pretende precisamente que las traducciones sean lo más __precisas__ posible, teniendo en cuenta __conceptos de la gramática__ como tal (_géneros_, _plurales_, _excepciones_, etc.) y también __conceptos abstractos__ tales como la _intención_, el _tono_, o el _fraseo_.
 
 Debido a ello no es suficiente con traducción __palabra a palabra__, se requiere una traducción .green[__frase a frase__] que garantice que las mismas conserven __todo__ el significado que quieren transmitir.
+
+---
+class: blueBg1, middle, center
+
+# I18next
+
+.green[`i18next`] es una librería hecha en .green[_JavaScript_] que nos ayuda a cumplir el propósito de _inteniacionalizar_ nuestra app.
+
+Cuenta con herramientas que facilitan su integración con muchos __frameworks__ y __librerías__, en nuestro caso utilizaremos .green[`react-i18next`].
+
+.footnote[[Página oficial de i18next](https://www.i18next.com/), [Página oficial de react-i18next](https://react.i18next.com/)]
+
+---
+class: whiteBg1, middle
+
+# Instalando todo
+
+```bash
+npm i \
+  i18next \
+  react-i18next \
+  i18next-xhr-backend \
+  i18next-browser-languagedetector
+```
+
+---
+class: whiteBg1, middle
+
+# Configuración
+
+```javascript
+import i18n from 'i18next';
+import { initReactI18next } from 'react-i18next';
+import Backend from 'i18next-xhr-backend';
+import LanguageDetector from 'i18next-browser-languagedetector';
+
+i18n
+  .use(Backend)
+  .use(LanguageDetector)
+  .use(initReactI18next)
+  .init({
+    fallbackLng: 'en',
+    debug: process.env.NODE_ENV === 'development',
+    load: 'currentOnly',
+    interpolation: {
+      escapeValue: false
+    }
+  });
+```
+
+---
+class: blueBg1, middle, center
+
+.green[
+  # Hora del Demo!
+]
+
+.footnote[El repositorio del demo lo pueden encontrar [aquí](https://github.com/caal-15/internationalization-example).]
 
 ---
 class: introOutro
