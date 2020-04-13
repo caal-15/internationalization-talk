@@ -69,7 +69,7 @@ class: whiteBg1
 
 # Filosofía
 
-.green[__I18n__] pretende precisamente que las traducciones sean lo más __precisas__ posible, teniendo en cuenta __conceptos de la gramática__ como tal (_géneros_, _plurales_, _excepciones_, etc.) y también __conceptos abstractos__ tales como la _intención_, el _tono_, o el _fraseo_.
+.green[__I18n__] pretende precisamente que las traducciones sean lo más __precisas__ posible, teniendo en cuenta __conceptos de la gramática__ como tal (_géneros_, _plurales_, _excepciones_, etc.) y también __conceptos abstractos__ tales como la _intención_, el _tono_ o el _fraseo_.
 
 Debido a ello no es suficiente con traducción __palabra a palabra__, se requiere una traducción .green[__frase a frase__] que garantice que las mismas conserven __todo__ el significado que quieren transmitir.
 
